@@ -1,0 +1,146 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: center;
+	flex-wrap: wrap;
+	align-content: center;
+	font-family: 'Open Sans', sans-serif;
+
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.container {
+    height: 300px;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+  }
+
+/*-- dice css -- */
+.first-face {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dice {
+	padding: 4px;
+	background-color: tomato;
+	width: 104px;
+	height: 104px;
+	border-radius: 10%;
+	margin-right: 10px;
+}
+
+.dot {
+	display: block;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.second-face {
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+	align-self: flex-end;
+}
+
+.third-face {
+	display: flex;
+	justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(1) {
+	align-self: flex-end;
+}
+
+.third-face .dot:nth-of-type(2) {
+	align-self: center;
+}
+
+
+.fourth-face,
+.sixth-face,
+.fifth-face {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fourth-face .column,
+.sixth-face .column,
+.fifth-face .column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+	justify-content: center;
+}
+
+
+/*-- button css --*/
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: tomato;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 93%;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: tomato;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: tomato;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
