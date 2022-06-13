@@ -1,10 +1,10 @@
 <html>
 <head>
+    <title>TEST WEB Sakana</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-<title>TEST WEB Sakana</title>
 <div class="container">
     <div class="vertical-center">
         <button class="button-5" data-href="data.php">Tourner le dé !</button>
